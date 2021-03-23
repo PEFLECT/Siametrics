@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Siametrics Frontend Engineer Testing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Limitations
 
-## Available Scripts
+- You **must** only build a web frontend by using only React Framework.
+- You **can** use any Web component library.
+- You **must** use React-Redux-Saga or React-Hooks.
+- You **should** always determine best practice and web performace.
+- You **can** use web worker, service worker to help increasing web performance if it is necessary.
+- You **can** use webpack, babel, linter or any library to help you.
+- You **must** create unit tests using jest.
 
-In the project directory, you can run:
+## Requirements
 
-### `yarn start`
+1. Build a **Transportation Management System** for tracking drivers in our system.
+1. Build Map Dashboard to see all driver routes, driver timelines.
+1. Build a Timeline to see all driver perform at difference time.
+1. Summarize working hour, Number of Item for each driver on timeline.
+1. Can show or hide any driver on map dashboard.
+1. Can Filter driver by name.
+1. Show all nodes on map.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Wireframe
+![image info](./Frame.png)
+## SDK
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Map SDK
 
-### `yarn test`
+1. You must use MapboxGL for Map SDK.
+1. Full documents https://docs.mapbox.com/mapbox-gl-js/api/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
 
-### `yarn build`
+1. You must use json-server for querying data.
+2. Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm install -g json-server
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start a backend server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+json-server --watch db.json
+```
 
-### `yarn eject`
+4. Example of query
+   `http://localhost:3000/jobs?_page=1&_limit=10`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+5. All available service
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+GET /jobs
+GET /nodes
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Submission
+1. Send your git repo and also add markdown note to make sure we can run your program
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Good luck !!
